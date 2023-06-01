@@ -7,7 +7,7 @@ Scenario 2 practice
 """
 
 # Todo: Get some input from the user
-
+name = input('put your name:')
 # Todo: Convert the temperatures
 
 # Todo: Print the greeting

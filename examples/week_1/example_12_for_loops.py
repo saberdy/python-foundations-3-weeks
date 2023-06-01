@@ -26,10 +26,13 @@ for i, number in enumerate(primes):
 # Complex example - create list of all primes under 100
 primes = []
 for i in range(100):
+    if i in range(2):
+        continue
     for n in range(2, i):
-        if i % n == 0:  # Check divisibility
+        if i % n == 0 and i != 2:  # Check divisibility
             break
-    else:               # If for-loop completes without a break, do this
+            # If for-loop completes without a break, do this
+    else:
         primes.append(i)
 
 print(primes)
